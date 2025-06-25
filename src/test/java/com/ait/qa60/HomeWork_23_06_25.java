@@ -21,7 +21,7 @@ public class HomeWork_23_06_25 {
     }
 
     @AfterMethod(enabled = false)
-    public void testDown(){
+    public void tearDown(){
         driver.quit();
     }
     @Test
