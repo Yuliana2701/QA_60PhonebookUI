@@ -36,7 +36,18 @@ public class TableTests {
             WebElement row4 = driver.findElement(By.cssSelector("tr:nth-child(4)"));// xpath //tr[4]
             System.out.println(row4.getText());
             System.out.println("**********************************************");
-        }
 
+            // get first item in row
+            WebElement item1 = driver.findElement(By.cssSelector("tr:nth-child(7) td:nth-child(1)"));
+            System.out.println(item1.getText());
+            System.out.println("**********************************************");
+
+            // get last element in row
+            WebElement canada = driver.findElement(By.cssSelector("tr:nth-child(8) td:nth-child(3)"));
+            System.out.println(canada.getText());
+            System.out.println("**********************************************");
+
+
+        }
     }
 }
