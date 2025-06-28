@@ -14,6 +14,7 @@ import java.time.Duration;
 public class TestBase {
     WebDriver driver;
 
+
     @BeforeMethod
     public void setUp() {
         driver = new ChromeDriver();
@@ -21,7 +22,9 @@ public class TestBase {
         driver.manage().window().maximize();
         driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(10));
 
+
     }
+
 
     @AfterMethod(enabled = false)
     public void tearDown() {
@@ -41,4 +44,4 @@ public class TestBase {
     public void click(By locator) {
         driver.findElement(locator).click();
     }
-}
+    }
