@@ -7,6 +7,7 @@ import org.testng.annotations.Test;
 public class CreateAccountTests extends TestBase {
     @Test
     public void newUserRegistrationPositiveTest() {
+        int i = (int)((System.currentTimeMillis()/1000)%3600);
         // click on login link
         click(By.cssSelector("a[href='/register']"));
 
@@ -21,7 +22,7 @@ public class CreateAccountTests extends TestBase {
 
 
         // enter email
-        typing(By.xpath("//input[@id='Email']"), "yulia27@gmail.com");
+        typing(By.xpath("//input[@id='Email']"), "yulia27"+i+"@gmail.com");
 
         // enter password
         typing(By.name("Password"), "Yuliana123!");
