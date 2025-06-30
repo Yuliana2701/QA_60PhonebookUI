@@ -15,7 +15,7 @@ public class ProductHelper extends BaseHelper {
     }
 
     public void addSecondProductToCart() {
-        List<WebElement> products = driver.findElements(By.cssSelector(".product-item"));
+        List<WebElement> products = findElements(By.cssSelector(".product-item"));
         if (products.size() >= 2) {
             WebElement secondProduct = products.get(1);
             lastAddedProductName = secondProduct.findElement(By.cssSelector("h2.product-title > a")).getText();

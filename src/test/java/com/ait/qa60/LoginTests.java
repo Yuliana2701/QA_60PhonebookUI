@@ -1,29 +1,17 @@
 package com.ait.qa60;
 
 import org.openqa.selenium.By;
+
 import org.testng.Assert;
 import org.testng.annotations.Test;
 
-public class LoginTests extends TestBase{
-@Test
-    public void loginPositiveTest(){
-    // click on login link
-    click(By.cssSelector("a[href='/login']"));
+public class LoginTests extends com.ait.qa60.TestBase {
 
-
-    // enter email
-    typing(By.xpath("//input[@id='Email']"), "yulia27@gmail.com");
-
-    // enter password
-    typing(By.name("Password"), "Yuliana123!");
-
-
-    // click on Log in button
-    click(By.xpath("//input[@class='button-1 login-button' and @type='submit' and @value='Log in']"));
-    // verify Log out link is displayed
-    Assert.assertTrue(isElementPresent(By.xpath("//a[text()='Log out']")));
-
+    @Test
+    public void loginPositiveTest() {
+        app.getUser().login("yulia27@gmail.com", "Yuliana123!");
+        Assert.assertTrue(app.getUser().isLoggedIn(), "User should be logged in");
+    }
 }
 
-}
 

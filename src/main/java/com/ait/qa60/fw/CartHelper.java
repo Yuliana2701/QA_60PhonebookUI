@@ -13,7 +13,7 @@ public class CartHelper extends BaseHelper {
     }
 
     public boolean isProductInCart(String name) {
-        List<WebElement> items = driver.findElements(By.cssSelector(".cart-item-row"));
+        List<WebElement> items = findElements(By.cssSelector(".cart-item-row"));
         for (WebElement item : items) {
             if (item.getText().contains(name)) {
                 return true;

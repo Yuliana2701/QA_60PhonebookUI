@@ -1,4 +1,4 @@
-package com.ait.qa60;
+package com.ait.qa60.homeworks;
 
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;

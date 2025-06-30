@@ -1,21 +1,25 @@
 package com.ait.qa60;
 
-import org.openqa.selenium.By;
-import org.openqa.selenium.WebElement;
 import org.testng.Assert;
-import org.testng.annotations.BeforeMethod;
+import org.testng.annotations.AfterMethod;
 import org.testng.annotations.Test;
-import java.util.List;
 
-@Test
-public void addSecondItemToCartTest() {
-    app.getUser().login("yulia27@gmail.com", "Yuliana123!");
-    Assert.assertTrue(app.getUser().isLoggedIn());
+public class AddItemToCartTests extends com.ait.qa60.TestBase {
 
-    app.getProduct().addSecondProductToCart();
-    String productName = app.getProduct().getLastAddedProductName();
+    @Test
+    public void addSecondItemToCartTest() {
 
-    Assert.assertTrue(app.getCart().isProductInCart(productName));
+        app.getUser().login("yulia27@gmail.com", "Yuliana123!");
+        Assert.assertTrue(app.getUser().isLoggedIn(), "User should be logged in");
+
+
+        app.getProduct().addSecondProductToCart();
+        String productName = app.getProduct().getLastAddedProductName();
+
+
+        Assert.assertTrue(app.getCart().isProductInCart(productName),
+                "Product '" + productName + "' should be in the cart");
+    }
 }
 
 
