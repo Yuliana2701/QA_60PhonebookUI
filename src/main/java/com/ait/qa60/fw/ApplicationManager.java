@@ -10,6 +10,7 @@ public class ApplicationManager {
     private CartHelper cart;
 
     public void init() {
+       // driver = new ChromeDriver();
         driver = new ChromeDriver();
         driver.manage().window().maximize();
         driver.get("https://demowebshop.tricentis.com");
