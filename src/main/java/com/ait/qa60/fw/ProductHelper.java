@@ -3,12 +3,13 @@ package com.ait.qa60.fw;
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
+import org.openqa.selenium.support.ui.ExpectedConditions;
 
 import java.util.List;
 
 public class ProductHelper extends BaseHelper {
 
-    private String lastAddedProductName;
+    public String lastAddedProductName;
 
     public ProductHelper(WebDriver driver) {
         super(driver);
@@ -16,10 +17,17 @@ public class ProductHelper extends BaseHelper {
 
     public void addSecondProductToCart() {
         List<WebElement> products = findElements(By.cssSelector(".product-item"));
-        if (products.size() >= 2) {
-            WebElement secondProduct = products.get(1);
-            lastAddedProductName = secondProduct.findElement(By.cssSelector("h2.product-title > a")).getText();
-            secondProduct.findElement(By.cssSelector(".product-box-add-to-cart-button")).click();
+        for (WebElement product : products) {
+            List<WebElement> nameElements = product.findElements(By.cssSelector(".product-name"));
+            if (nameElements.size() > 0) {
+                WebElement nameElement = nameElements.get(0);
+                if (nameElement.getText().trim().equals("14.1-inch Laptop")) {
+                    lastAddedProductName = nameElement.getText().trim();
+                    WebElement addToCartBtn = product.findElement(By.cssSelector("input[value='Add to cart']"));
+                    wait.until(ExpectedConditions.elementToBeClickable(addToCartBtn)).click();
+                    break;
+                }
+            }
         }
     }
 

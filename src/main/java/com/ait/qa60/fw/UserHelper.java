@@ -59,5 +59,9 @@ public class UserHelper extends BaseHelper {
         fillRegistrationForm(user);
         submitRegistration();
     }
+
+    public void logout() {
+        click(By.cssSelector("a[href='/logout']"));
+    }
 }
 

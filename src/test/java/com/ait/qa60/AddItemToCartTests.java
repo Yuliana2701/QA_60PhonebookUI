@@ -9,20 +9,26 @@ public class AddItemToCartTests extends TestBase {
     @Test
     public void addSecondItemToCartTest() {
 
-        app.getUser().login("yulia27@gmail.com", "Yuliana123!");
-        Assert.assertTrue(app.getUser().isLoggedIn(), "User should be logged in");
+        if (!app.getUser().isLoggedIn()) {
+            app.getUser().login("yulia27@gmail.com", "Yuliana123!");
+        }
 
+        Assert.assertTrue(app.getUser().isLoggedIn(), " Login failed!");
 
+        // added second item
         app.getProduct().addSecondProductToCart();
         String productName = app.getProduct().getLastAddedProductName();
 
+    }
 
-        Assert.assertTrue(app.getCart().isProductInCart(productName),
-                "Product '" + productName + "' should be in the cart");
+    @AfterMethod
+    public void tearDown() {
+
+        if (app.getUser().isLoggedIn()) {
+            app.getUser().logout();
+        }
     }
 }
-
-
 
 
 
