@@ -16,11 +16,12 @@ public class UserHelper extends BaseHelper {
 
     public void fillLoginForm(String email, String password) {
         type(By.id("Email"), email);
-        type(By.name("Password"), password);
+        type(By.id("Password"), password);
     }
 
     public void submitLogin() {
         click(By.xpath("//input[@value='Log in']"));
+        waitUntilVisible(By.xpath("//a[text()='Log out']"), 20);
     }
 
     public void login(String email, String password) {
