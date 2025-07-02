@@ -7,7 +7,7 @@ public class ApplicationManager {
     private WebDriver driver;
     private UserHelper user;
     private ProductHelper product;
-    private CartHelper cart;
+
 
     public void init() {
         driver = new ChromeDriver();
@@ -16,7 +16,7 @@ public class ApplicationManager {
 
         user = new UserHelper(driver);
         product = new ProductHelper(driver);
-        cart = new CartHelper(driver);
+
     }
 
     public void stop() {
@@ -33,7 +33,5 @@ public class ApplicationManager {
         return product;
     }
 
-    public CartHelper getCart() {
-        return cart;
-    }
+
 }
