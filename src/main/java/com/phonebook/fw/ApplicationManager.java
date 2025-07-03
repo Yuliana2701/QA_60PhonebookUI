@@ -3,7 +3,6 @@ package com.phonebook.fw;
 import com.phonebook.utils.MyListener;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
-import org.openqa.selenium.edge.EdgeDriver;
 import org.openqa.selenium.firefox.FirefoxDriver;
 import org.openqa.selenium.support.events.EventFiringDecorator;
 import org.openqa.selenium.support.events.WebDriverListener;
@@ -14,7 +13,7 @@ import java.time.Duration;
 
 public class ApplicationManager {
 
-    String brauser;
+    String browser;
     WebDriver driver;
     Logger logger = LoggerFactory.getLogger(ApplicationManager.class);
 
@@ -24,15 +23,15 @@ public class ApplicationManager {
     HomePageHelper home;
 
     public ApplicationManager(String browser) {
-        this.brauser = browser;
+        this.browser = browser;
     }
 
 
     public void init() {
-        if(brauser.equalsIgnoreCase("chrome")){
+        if(browser.equalsIgnoreCase("chrome")){
             driver = new ChromeDriver();
             logger.info("Test start in Chrome browser");
-        }else if(brauser.equalsIgnoreCase("firefox")){
+        }else if(browser.equalsIgnoreCase("firefox")){
             driver = new FirefoxDriver();
             logger.info("Test start in Firefox browser");
         }
