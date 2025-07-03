@@ -3,18 +3,7 @@
 <suite name="Smoky" verbose="1">
     <test name="Smoky">
         <classes>
-            <class name="com.phonebook.HomePageTests"/>
-            <class name="com.phonebook.LoginTests">
-                <methods>
-                    <exclude name=".*Negative.*"></exclude>
-                </methods>
             </class>
-            <class name="com.phonebook.AddContactTests">
-                <methods>
-                    <exclude name=".*From.*"></exclude>
-                </methods>
-            </class>
-            <class name="com.phonebook.DeleteContactTests"/>
         </classes>
     </test>
 </suite>
