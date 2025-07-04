@@ -1,0 +1,159 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="com.ait.qa60.homeworks.TableTests" tests="1" skipped="0" failures="0" errors="0" timestamp="2025-07-04T10:47:55" hostname="DESKTOP-ECF2EJG" time="0.751">
+  <properties/>
+  <testcase name="findElementTableWithCssTable" classname="com.ait.qa60.homeworks.TableTests" time="0.751"/>
+  <system-out><![CDATA[21
+Company Contact Country
+Centro comercial Moctezuma Francisco Chang Mexico
+**********************************************
+Königlich Essen
+**********************************************
+Canada
+**********************************************
+Alfreds Futterkiste Maria Anders Germany
+Centro comercial Moctezuma Francisco Chang Mexico
+**********************************************
+Königlich Essen
+**********************************************
+Canada
+**********************************************
+Berglunds snabbköp Christina Berglund Sweden
+Centro comercial Moctezuma Francisco Chang Mexico
+**********************************************
+Königlich Essen
+**********************************************
+Canada
+**********************************************
+Centro comercial Moctezuma Francisco Chang Mexico
+Centro comercial Moctezuma Francisco Chang Mexico
+**********************************************
+Königlich Essen
+**********************************************
+Canada
+**********************************************
+Ernst Handel Roland Mendel Austria
+Centro comercial Moctezuma Francisco Chang Mexico
+**********************************************
+Königlich Essen
+**********************************************
+Canada
+**********************************************
+Island Trading Helen Bennett UK
+Centro comercial Moctezuma Francisco Chang Mexico
+**********************************************
+Königlich Essen
+**********************************************
+Canada
+**********************************************
+Königlich Essen Philip Cramer Germany
+Centro comercial Moctezuma Francisco Chang Mexico
+**********************************************
+Königlich Essen
+**********************************************
+Canada
+**********************************************
+Laughing Bacchus Winecellars Yoshi Tannamuri Canada
+Centro comercial Moctezuma Francisco Chang Mexico
+**********************************************
+Königlich Essen
+**********************************************
+Canada
+**********************************************
+Magazzini Alimentari Riuniti Giovanni Rovelli Italy
+Centro comercial Moctezuma Francisco Chang Mexico
+**********************************************
+Königlich Essen
+**********************************************
+Canada
+**********************************************
+Firstname Lastname
+Centro comercial Moctezuma Francisco Chang Mexico
+**********************************************
+Königlich Essen
+**********************************************
+Canada
+**********************************************
+Peter Griffin
+Centro comercial Moctezuma Francisco Chang Mexico
+**********************************************
+Königlich Essen
+**********************************************
+Canada
+**********************************************
+Lois Griffin
+Centro comercial Moctezuma Francisco Chang Mexico
+**********************************************
+Königlich Essen
+**********************************************
+Canada
+**********************************************
+Firstname Lastname
+Centro comercial Moctezuma Francisco Chang Mexico
+**********************************************
+Königlich Essen
+**********************************************
+Canada
+**********************************************
+Peter Griffin
+Centro comercial Moctezuma Francisco Chang Mexico
+**********************************************
+Königlich Essen
+**********************************************
+Canada
+**********************************************
+Lois Griffin
+Centro comercial Moctezuma Francisco Chang Mexico
+**********************************************
+Königlich Essen
+**********************************************
+Canada
+**********************************************
+Firstname Lastname
+Centro comercial Moctezuma Francisco Chang Mexico
+**********************************************
+Königlich Essen
+**********************************************
+Canada
+**********************************************
+Peter Griffin
+Centro comercial Moctezuma Francisco Chang Mexico
+**********************************************
+Königlich Essen
+**********************************************
+Canada
+**********************************************
+Lois Griffin
+Centro comercial Moctezuma Francisco Chang Mexico
+**********************************************
+Königlich Essen
+**********************************************
+Canada
+**********************************************
+Firstname Lastname
+Centro comercial Moctezuma Francisco Chang Mexico
+**********************************************
+Königlich Essen
+**********************************************
+Canada
+**********************************************
+Peter Griffin
+Centro comercial Moctezuma Francisco Chang Mexico
+**********************************************
+Königlich Essen
+**********************************************
+Canada
+**********************************************
+Lois Griffin
+Centro comercial Moctezuma Francisco Chang Mexico
+**********************************************
+Königlich Essen
+**********************************************
+Canada
+**********************************************
+]]></system-out>
+  <system-err><![CDATA[Jul 04, 2025 12:47:54 PM org.openqa.selenium.devtools.CdpVersionFinder findNearestMatch
+WARNING: Unable to find CDP implementation matching 138
+Jul 04, 2025 12:47:54 PM org.openqa.selenium.chromium.ChromiumDriver lambda$new$5
+WARNING: Unable to find version of CDP to use for 138.0.7204.97. You may need to include a dependency on a specific version of the CDP using something similar to `org.seleniumhq.selenium:selenium-devtools-v86:4.26.0` where the version ("v86") matches the version of the chromium-based browser you're using and the version number of the artifact is the same as Selenium's.
+]]></system-err>
+</testsuite>

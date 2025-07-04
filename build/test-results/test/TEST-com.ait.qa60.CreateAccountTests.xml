@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="com.ait.qa60.CreateAccountTests" tests="1" skipped="0" failures="0" errors="0" timestamp="2025-07-04T10:48:08" hostname="DESKTOP-ECF2EJG" time="1.768">
+  <properties/>
+  <testcase name="newUserRegistrationPositiveTest" classname="com.ait.qa60.CreateAccountTests" time="1.768"/>
+  <system-out><![CDATA[12:48:08.506 [Test worker] INFO  com.ait.qa60.TestBase -- Start testnewUserRegistrationPositiveTest
+12:48:10.274 [Test worker] INFO  com.ait.qa60.TestBase -- PASSED:newUserRegistrationPositiveTest
+12:48:10.274 [Test worker] INFO  com.ait.qa60.TestBase -- Stop test
+12:48:10.274 [Test worker] INFO  com.ait.qa60.TestBase -- ======================================================
+]]></system-out>
+  <system-err><![CDATA[]]></system-err>
+</testsuite>

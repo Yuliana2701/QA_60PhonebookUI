@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="com.ait.qa60.AddItemToCartTests" tests="1" skipped="0" failures="0" errors="0" timestamp="2025-07-04T10:46:08" hostname="DESKTOP-ECF2EJG" time="71.376">
+  <properties/>
+  <testcase name="addSecondItemToCartTest" classname="com.ait.qa60.AddItemToCartTests" time="71.376"/>
+  <system-out><![CDATA[12:46:08.198 [Test worker] INFO  com.ait.qa60.TestBase -- Start testaddSecondItemToCartTest
+12:47:20.120 [Test worker] INFO  com.ait.qa60.TestBase -- PASSED:addSecondItemToCartTest
+12:47:20.120 [Test worker] INFO  com.ait.qa60.TestBase -- Stop test
+12:47:20.120 [Test worker] INFO  com.ait.qa60.TestBase -- ======================================================
+]]></system-out>
+  <system-err><![CDATA[]]></system-err>
+</testsuite>

@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="com.ait.qa60.LoginTests" tests="1" skipped="0" failures="1" errors="0" timestamp="2025-07-04T10:48:14" hostname="DESKTOP-ECF2EJG" time="10.022">
+  <properties/>
+  <testcase name="loginPositiveTest" classname="com.ait.qa60.LoginTests" time="10.022">
+    <failure message="org.openqa.selenium.TimeoutException: Expected condition failed: waiting for element to be clickable: By.cssSelector: a[href='/login'] (tried for 10 second(s) with 500 milliseconds interval)&#10;Build info: version: '4.26.0', revision: '8ccf0219d7'&#10;System info: os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '17.0.12'&#10;Driver info: org.openqa.selenium.chrome.ChromeDriver&#10;Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 138.0.7204.97, chrome: {chromedriverVersion: 138.0.7204.49 (d2b48fd5f781..., userDataDir: C:\Users\yuliana\AppData\Lo...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:53361}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:53361/devtoo..., se:cdpVersion: 138.0.7204.97, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}&#10;Session ID: 995384c3f82296e3dfe4ec9e2670c63e" type="org.openqa.selenium.TimeoutException">org.openqa.selenium.TimeoutException: Expected condition failed: waiting for element to be clickable: By.cssSelector: a[href='/login'] (tried for 10 second(s) with 500 milliseconds interval)
+Build info: version: '4.26.0', revision: '8ccf0219d7'
+System info: os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '17.0.12'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 138.0.7204.97, chrome: {chromedriverVersion: 138.0.7204.49 (d2b48fd5f781..., userDataDir: C:\Users\yuliana\AppData\Lo...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:53361}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:53361/devtoo..., se:cdpVersion: 138.0.7204.97, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: 995384c3f82296e3dfe4ec9e2670c63e
+	at app//org.openqa.selenium.support.ui.WebDriverWait.timeoutException(WebDriverWait.java:84)
+	at app//org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:228)
+	at app//com.ait.qa60.fw.BaseHelper.click(BaseHelper.java:23)
+	at app//com.ait.qa60.fw.UserHelper.openLoginForm(UserHelper.java:14)
+	at app//com.ait.qa60.fw.UserHelper.login(UserHelper.java:28)
+	at app//com.ait.qa60.LoginTests.loginPositiveTest(LoginTests.java:14)
+	at java.base@17.0.12/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base@17.0.12/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+	at java.base@17.0.12/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base@17.0.12/java.lang.reflect.Method.invoke(Method.java:568)
+	at app//org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:141)
+	at app//org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:687)
+	at app//org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:230)
+	at app//org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:63)
+	at app//org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:995)
+	at app//org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:203)
+	at app//org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:154)
+	at app//org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:134)
+	at java.base@17.0.12/java.util.ArrayList.forEach(ArrayList.java:1511)
+	at app//org.testng.TestRunner.privateRun(TestRunner.java:741)
+	at app//org.testng.TestRunner.run(TestRunner.java:616)
+	at app//org.testng.SuiteRunner.runTest(SuiteRunner.java:421)
+	at app//org.testng.SuiteRunner.runSequentially(SuiteRunner.java:413)
+	at app//org.testng.SuiteRunner.privateRun(SuiteRunner.java:373)
+	at app//org.testng.SuiteRunner.run(SuiteRunner.java:312)
+	at app//org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at app//org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
+	at app//org.testng.TestNG.runSuitesSequentially(TestNG.java:1274)
+	at app//org.testng.TestNG.runSuitesLocally(TestNG.java:1208)
+	at app//org.testng.TestNG.runSuites(TestNG.java:1112)
+	at app//org.testng.TestNG.run(TestNG.java:1079)
+	at org.gradle.api.internal.tasks.testing.testng.TestNGTestClassProcessor.runTests(TestNGTestClassProcessor.java:153)
+	at org.gradle.api.internal.tasks.testing.testng.TestNGTestClassProcessor.stop(TestNGTestClassProcessor.java:95)
+	at org.gradle.api.internal.tasks.testing.SuiteTestClassProcessor.stop(SuiteTestClassProcessor.java:63)
+	at java.base@17.0.12/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base@17.0.12/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+	at java.base@17.0.12/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base@17.0.12/java.lang.reflect.Method.invoke(Method.java:568)
+	at org.gradle.internal.dispatch.ReflectionDispatch.dispatch(ReflectionDispatch.java:36)
+	at org.gradle.internal.dispatch.ReflectionDispatch.dispatch(ReflectionDispatch.java:24)
+	at org.gradle.internal.dispatch.ContextClassLoaderDispatch.dispatch(ContextClassLoaderDispatch.java:33)
+	at org.gradle.internal.dispatch.ProxyDispatchAdapter$DispatchingInvocationHandler.invoke(ProxyDispatchAdapter.java:92)
+	at jdk.proxy1/jdk.proxy1.$Proxy4.stop(Unknown Source)
+	at org.gradle.api.internal.tasks.testing.worker.TestWorker$3.run(TestWorker.java:200)
+	at org.gradle.api.internal.tasks.testing.worker.TestWorker.executeAndMaintainThreadName(TestWorker.java:132)
+	at org.gradle.api.internal.tasks.testing.worker.TestWorker.execute(TestWorker.java:103)
+	at org.gradle.api.internal.tasks.testing.worker.TestWorker.execute(TestWorker.java:63)
+	at org.gradle.process.internal.worker.child.ActionExecutionWorker.execute(ActionExecutionWorker.java:56)
+	at org.gradle.process.internal.worker.child.SystemApplicationClassLoaderWorker.call(SystemApplicationClassLoaderWorker.java:121)
+	at org.gradle.process.internal.worker.child.SystemApplicationClassLoaderWorker.call(SystemApplicationClassLoaderWorker.java:71)
+	at app//worker.org.gradle.process.internal.worker.GradleWorkerMain.run(GradleWorkerMain.java:69)
+	at app//worker.org.gradle.process.internal.worker.GradleWorkerMain.main(GradleWorkerMain.java:74)
+</failure>
+  </testcase>
+  <system-out><![CDATA[12:48:14.842 [Test worker] INFO  com.ait.qa60.TestBase -- Start testloginPositiveTest
+12:48:25.029 [Test worker] ERROR com.ait.qa60.TestBase -- FAILED:loginPositiveTest Screenshot path:C:\Tools\QA60_PhonebookUI\screenshots\screen-1751626105008.png
+12:48:25.029 [Test worker] INFO  com.ait.qa60.TestBase -- Stop test
+12:48:25.030 [Test worker] INFO  com.ait.qa60.TestBase -- ======================================================
+]]></system-out>
+  <system-err><![CDATA[]]></system-err>
+</testsuite>
